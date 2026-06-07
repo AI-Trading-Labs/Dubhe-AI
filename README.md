@@ -29,14 +29,16 @@ print(response.choices[0].message.content)
 
 ## Models
 
-| Model | Context | Best for | Price (input/output per 1M tokens) |
-|-------|---------|----------|-----------------------------------|
-| **Fast** | 1M | Chat, writing, everyday | $0.30 / $0.60 |
-| **Reasoner** | 1M | Deep reasoning, analysis | $6.00 / $18.00 |
-| **Vision** | 1M | Image understanding | $5.00 / $15.00 |
-| **Code** | 200K | Programming | $0.80 / $3.00 |
-| **Agent** | 205K | Autonomous workflows | $1.00 / $4.00 |
-| **Omni** | 1M | Long-context tasks | $2.00 / $8.00 |
+All models are accessed via their `dubhe-*` API name. Different models consume plan quota at different speeds — see [Pricing](https://dubhehub.com/pricing) for details.
+
+| API Name | Best for | Context | Price (input/output per 1M tokens) |
+|----------|----------|---------|-----------------------------------|
+| `dubhe-fast` | Fast & economical chat | 1M | $0.30 / $0.60 |
+| `dubhe-code` | Code generation | 200K | $0.80 / $3.00 |
+| `dubhe-agent` | Agent & tool use | 205K | $1.00 / $4.00 |
+| `dubhe-plus` | General purpose | 1M | $2.00 / $8.00 |
+| `dubhe-omni` | Vision multimodal | 1M | $5.00 / $15.00 |
+| `dubhe-reasoning` | Advanced reasoning | 1M | $6.00 / $18.00 |
 
 ## Examples
 
